@@ -1,5 +1,6 @@
 public class K5 extends Car {
     public static final double K5_FUEL_EFFICIENCY = 13;
+    public static final String K5_NAME = "K5";
 
     public K5(Double distance) {
         super(distance);
@@ -8,16 +9,16 @@ public class K5 extends Car {
 
     @Override
     double getDistancePerLiter() {
-        return 0; // 13
+        return fuelEfficiency.getFuel(); // 13
     }
 
     @Override
     double getTripDistance() {
-        return 0;
+        return distance.getDistance();
     }
 
     @Override
     String getName() {
-        return null;
+        return K5_NAME;
     }
 }

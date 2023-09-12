@@ -1,5 +1,6 @@
 public class Sonata extends Car {
     public static final double SONATA_FUEL_EFFICIENCY = 10;
+    public static final String SONATA_NAME = "Sonata";
 
     public Sonata(Double distance) {
         super(distance);
@@ -18,6 +19,6 @@ public class Sonata extends Car {
 
     @Override
     String getName() {
-        return null;
+        return SONATA_NAME;
     }
 }

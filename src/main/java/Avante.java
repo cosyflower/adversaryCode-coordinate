@@ -1,5 +1,6 @@
 public class Avante extends Car {
     public static final double AVANTE_FUEL_EFFICIENCY = 15;
+    public static final String AVANTE_NAME = "Avante";
 
     public Avante(Double distance) {
         super(distance);
@@ -18,6 +19,6 @@ public class Avante extends Car {
 
     @Override
     String getName() {
-        return null;
+        return AVANTE_NAME;
     }
 }
