@@ -14,20 +14,21 @@ ex) git checkout -b apply-feedback
   - Menu, XCoordinate, YCoordinate, Dot with XCoordinate and YCoordinate
 
 - 좌표 정보는 괄호"(", ")"로 둘러쌓여 있으며 쉼표(,)로 x값과 y값을 구분한다
-  - [] Dot 을 검증할 때 활용할 수 있는 정보 DotValidator.class
-  - [] 괄호로 둘러 쌓여있어야 한다 coveredWithBraces()
-  - [] 쉼표로 x, y 값을 구분한다 splitWithComma() 
-  - [] 전체적인 구조로 (숫자,숫자) 구조를 만족해야 한다 isMatchedRegex()
+  - [x] Dot 을 검증할 때 활용할 수 있는 정보 DotValidator.class
+  - [x] 전체적인 구조로 (숫자,숫자) 구조를 만족해야 한다 isMatchedRegex()
+    - 정규표현식을 활용 : '('로 시작하고 숫자, ',', 숫자가 존재해야 하며 ')'로 마무리해야 한다
+      - [x] 괄호로 둘러 쌓여있어야 한다 ~~coveredWithBraces()~~
+      - [x] 쉼표로 x, y 값을 구분한다 ~~splitWithComma()~~
 
 - X, Y좌표 모두 최대 24까지만 입력할 수 있다 (0-24)
-  - [] XCoordinate, YCoordinate 검증 시 활용해야 하는 정보 CoordinateValidator.class
-  - [] 0 - 24 범위 내에 존재하는 수여야 한다 isInRange()
+  - [x] XCoordinate, YCoordinate 검증 시 활용해야 하는 정보 CoordinateValidator.class
+  - [x] 0 - 24 범위 내에 존재하는 수여야 한다 isInRange()
   - [] 정상적인 경우에는 해당 좌표에 특수 문자를 표시한다(*) 표기 하는 걸로  (OutputView, displayDot)
-    - [] Dot.class 에서 25*25 형태의 배열을 유지합니다
+    - [] Dot.class 에서 25*25 형태의 배열을 유지합니다 ??
     - [] 해당되는 좌표에 특수 문자를 저장합니다
     - [] 해당 좌표를 출력합니다 
   - [] 범위에서 벗어난다면 에러 문구 출력 - 재입력을 받아야 한다 
-    - [] **예외** 0보다 작거나, 24 보다 큰 수가 입력된 경우 예외를 throw 합니다
+    - [x] **예외** 0보다 작거나, 24 보다 큰 수가 입력된 경우 예외를 throw 합니다
     - [] **예외 처리** 에러 문구를 출력하고, 재입력을 받습니다 
   
 
