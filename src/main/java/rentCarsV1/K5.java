@@ -1,3 +1,5 @@
+package rentCarsV1;
+
 public class K5 extends Car {
     public static final double K5_FUEL_EFFICIENCY = 13;
     public static final String K5_NAME = "K5";

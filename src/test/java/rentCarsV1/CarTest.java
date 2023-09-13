@@ -1,5 +1,8 @@
+package rentCarsV1;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import rentCarsV1.*;
 
 public class CarTest {
     private static Distance distance;

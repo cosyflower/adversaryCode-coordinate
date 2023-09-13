@@ -12,4 +12,17 @@ public class WeaknessTest {
         System.out.println(format);
         System.out.println("round = " + round);
     }
+
+    @Test
+    void system_getProperty() {
+        String property = System.getProperty("java.version");
+        String vendorProperty = System.getProperty("java.vendor");
+        String vendorUrl = System.getProperty("java.vendor.url");
+        String osName = System.getProperty("os.name");
+
+        System.out.println("vendorUrl = " + vendorUrl);
+        System.out.println("vendorProperty = " + vendorProperty);
+        System.out.println("property = " + property);
+        System.out.println("osName = " + osName);
+    }
 }

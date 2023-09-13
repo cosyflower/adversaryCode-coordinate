@@ -1,7 +1,11 @@
+package rentCarsV1;
+
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.util.Comparator;
+import rentCarsV1.Avante;
+import rentCarsV1.K5;
+import rentCarsV1.RentCompany;
+import rentCarsV1.Sonata;
 
 public class RentCompanyTest {
     public static final String NEWLINE = System.getProperty("line.separator");

@@ -1,3 +1,5 @@
+package rentCarsV1;
+
 public abstract class Car {
     protected Distance distance;
     protected Liter fuelEfficiency;

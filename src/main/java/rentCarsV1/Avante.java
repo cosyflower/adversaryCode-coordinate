@@ -1,3 +1,5 @@
+package rentCarsV1;
+
 public class Avante extends Car {
     public static final double AVANTE_FUEL_EFFICIENCY = 15;
     public static final String AVANTE_NAME = "Avante";
