@@ -24,5 +24,8 @@ public class DotTest {
                 .hasMessageStartingWith("입력 형식");
     }
 
-
+    @Test
+    void equals_Test() {
+        Assertions.assertEquals(new Dot("(2,2)"), new Dot("(2,2)"));
+    }
 }

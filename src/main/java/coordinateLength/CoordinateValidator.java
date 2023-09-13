@@ -13,4 +13,6 @@ public class CoordinateValidator {
             throw new IllegalArgumentException(Constants.NOT_IN_RANGE_ERROR);
         }
     }
+
+
 }

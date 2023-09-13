@@ -15,5 +15,10 @@ public class XYCoordinateTest {
                 () -> new YCoordinate(25));
     }
 
+    @Test
+    void xCoordinate_equals_Test() {
+        Assertions.assertEquals(new XCoordinate(2), new XCoordinate(2));
+    }
+
 
 }
