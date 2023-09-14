@@ -30,11 +30,13 @@ public class Dots {
     }
 
     public int getXDiff() {
-        return Math.abs(getNthDot(0).getXValue() - getNthDot(1).getXValue());
+        return Math.abs(getNthDot(FIRST_DOT_INDEX).getXValue() -
+                getNthDot(SECOND_DOT_INDEX).getXValue());
     }
 
     public int getYDiff() {
-        return Math.abs(getNthDot(0).getYValue() - getNthDot(1).getYValue());
+        return Math.abs(getNthDot(FIRST_DOT_INDEX).getYValue()
+                - getNthDot(SECOND_DOT_INDEX).getYValue());
     }
 
     public double getLengthBetweenDots() {

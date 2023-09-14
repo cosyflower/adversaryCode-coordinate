@@ -6,6 +6,7 @@ import coordinateLength.utils.Util;
 import java.util.Objects;
 
 public class Dot {
+
     private static final int XDOT_INDEX_IN_COORDINATES = 0;
     private static final int YDOT_INDEX_IN_COORDINATES = 1;
 
