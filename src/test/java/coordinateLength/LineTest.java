@@ -16,6 +16,7 @@ public class LineTest {
     void Line_Calculate() {
         Line line = new Line("(10,10)-(14,15)");
         double length = line.calculateLength();
+        System.out.println("length = " + length);
         Assertions.assertEquals(length, 6.403, 0.001);
     }
 

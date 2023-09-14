@@ -18,7 +18,7 @@ public class OutputViewTest {
     @Test
     void display_Multiple_Dots() {
         OutputView outputView = new OutputView();
-        outputView.showLine(new Dots("(10,10)-(14,15)"));
+        outputView.showLine(new Line("(10,10)-(14,15)"));
     }
 
     @Test

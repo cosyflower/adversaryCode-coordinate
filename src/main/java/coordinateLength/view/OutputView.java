@@ -25,15 +25,15 @@ public class OutputView {
         System.out.println();
     }
 
-    public static void showLine(Dots multipleDots) {
-        displayDots(multipleDots);
-        printXAxis();
-        printXAxisValues();
-        System.out.println();
-    }
+//    public static void showLine(Dots multipleDots) {
+//        displayDots(multipleDots);
+//        printXAxis();
+//        printXAxisValues();
+//        System.out.println();
+//    }
 
     public static void showLine(Line line) {
-        displayDots(line.getLine());
+        displayDots(line);
         printXAxis();
         printXAxisValues();
         System.out.println();
@@ -64,7 +64,8 @@ public class OutputView {
                 );
     }
 
-    private static void displayDots(Dots displayingDots) {
+    private static void displayDots(Line line) {
+        Dots displayingDots = line.getLine();
         IntStream.range(START_INCLUSIVE, END_EXCLUSIVE)
                 .forEach(
                         (number) -> {

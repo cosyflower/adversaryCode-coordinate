@@ -27,8 +27,8 @@ ex) git checkout -b apply-feedback
     - ~~[] Dot.class 에서 25*25 형태의 배열을 유지합니다 ??~~
     - [x] 해당되는 좌표에 특수 문자를 출력합니다 
       - [x] 한 개의 좌표에 특수 문자를 출력합니다 
-      - [] 두 개의 좌표에 특수 문자를 출력합니다 
-  - [] 범위에서 벗어난다면 에러 문구 출력 - 재입력을 받아야 한다 
+      - [x] 두 개의 좌표에 특수 문자를 출력합니다 
+  - [] 범위에서 벗어난다면 에러 문구 출력 - 재입력을 받아야 한다 InputController  
     - [x] **예외** 0보다 작거나, 24 보다 큰 수가 입력된 경우 예외를 throw 합니다
     - [] **예외 처리** 에러 문구를 출력하고, 재입력을 받습니다 
   
@@ -41,7 +41,7 @@ ex) git checkout -b apply-feedback
       - [x] '-' 로 구분하고 각각의 좌표 객체를 형성합니다 
  
 - 직선인 경우는 두 점 사이 거리를 계산해서 출력한다 - Line.class
-  - [] 각각의 점을 특수문자로 표현한다 OutputView#displayLocation
+  - [x] 각각의 점을 특수문자로 표현한다 OutputView#displayLocation
   - [x] 두 점 사이의 거리를 계산합니다 Line#calculateLength
-  - [] 두 점 사이의 거리를 출력합니다 OutputView#displayLength
+  - [x] 두 점 사이의 거리를 출력합니다 OutputView#displayLength
 
