@@ -1,5 +1,7 @@
 package coordinateLength;
 
+import coordinateLength.model.XCoordinate;
+import coordinateLength.model.YCoordinate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

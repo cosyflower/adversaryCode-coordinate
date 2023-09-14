@@ -1,14 +1,20 @@
-package coordinateLength;
+package coordinateLength.model;
+
+import coordinateLength.validator.CoordinateValidator;
 
 import java.util.Objects;
 
-public class YCoordinate extends CoordinateValidator{
+public class YCoordinate extends CoordinateValidator {
 
     private final int y;
 
     public YCoordinate(int yValue) {
         super(yValue);
         this.y = yValue;
+    }
+
+    public int getYValue() {
+        return y;
     }
 
     @Override

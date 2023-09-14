@@ -1,5 +1,6 @@
-package coordinateLength;
+package coordinateLength.validatorTest;
 
+import coordinateLength.validator.LineValidator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

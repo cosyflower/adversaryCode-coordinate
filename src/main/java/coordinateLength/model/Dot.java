@@ -1,5 +1,6 @@
-package coordinateLength;
+package coordinateLength.model;
 
+import coordinateLength.validator.DotValidator;
 import coordinateLength.utils.Util;
 
 import java.util.Objects;
@@ -16,6 +17,22 @@ public class Dot {
         String[] coordinates = Util.removeBraces(s).split(",");
         this.xDot = new XCoordinate(Util.toInt(coordinates[XDOT_INDEX_IN_COORDINATES]));
         this.yDot = new YCoordinate(Util.toInt(coordinates[YDOT_INDEX_IN_COORDINATES]));
+    }
+
+    public int getXValue() {
+        return xDot.getXValue();
+    }
+
+    public int getYValue() {
+        return yDot.getYValue();
+    }
+
+    public XCoordinate getX() {
+        return xDot;
+    }
+
+    public YCoordinate getY() {
+        return yDot;
     }
 
     @Override

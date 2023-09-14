@@ -1,4 +1,4 @@
-package coordinateLength;
+package coordinateLength.validator;
 
 import coordinateLength.utils.Constants;
 

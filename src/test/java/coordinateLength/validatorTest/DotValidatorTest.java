@@ -1,6 +1,7 @@
-package coordinateLength;
+package coordinateLength.validatorTest;
 
 import coordinateLength.utils.Util;
+import coordinateLength.validator.DotValidator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
