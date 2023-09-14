@@ -9,33 +9,32 @@ import java.util.List;
 
 public class Dots {
 
-    private final List<Dot> twoDots;
+    public static final int FIRST_DOT_INDEX = 0;
+    public static final int SECOND_DOT_INDEX = 1;
+
+    private final List<Dot> filledDots;
 
     public Dots(String s) {
         new LineValidator(s);
-        twoDots = new ArrayList<>();
+        filledDots = new ArrayList<>();
         Arrays.stream(s.split("-"))
-                        .forEach((dot) -> twoDots.add(new Dot(dot)));
+                .forEach((dot) -> filledDots.add(new Dot(dot)));
     }
 
     public List<Dot> getDots() {
-        return new ArrayList<>(twoDots);
+        return new ArrayList<>(filledDots);
     }
 
-    public Dot getFirstDot() { // for Refactor
-        return new ArrayList<>(twoDots).get(0);
-    }
-
-    public Dot getSecondDot() { // for Refactor
-        return new ArrayList<>(twoDots).get(1);
+    public Dot getNthDot(int nth) {
+        return new ArrayList<>(filledDots).get(nth);
     }
 
     public int getXDiff() {
-        return Math.abs(getFirstDot().getXValue() - getSecondDot().getXValue());
+        return Math.abs(getNthDot(0).getXValue() - getNthDot(1).getXValue());
     }
 
     public int getYDiff() {
-        return Math.abs(getFirstDot().getYValue() - getSecondDot().getYValue());
+        return Math.abs(getNthDot(0).getYValue() - getNthDot(1).getYValue());
     }
 
     public double getLengthBetweenDots() {
